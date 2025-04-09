@@ -12,7 +12,12 @@ interface ResponseProps {
 }
 
 export default async function Post() {
-  const response = await fetch("https://dummyjson.com/post?limit=5");
+  const response = await fetch("https://dummyjson.com/post?limit=5", {
+    cache: "force-cache",
+    next: {
+      revalidate: 60,
+    },
+  });
   const data: ResponseProps = await response.json();
 
   console.log(data);
