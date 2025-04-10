@@ -20,8 +20,6 @@ export default async function Post() {
   });
   const data: ResponseProps = await response.json();
 
-  console.log(data);
-
   return (
     <div>
       <ul className="flex flex-col gap-5 p-4">

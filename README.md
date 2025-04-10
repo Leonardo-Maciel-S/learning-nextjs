@@ -92,3 +92,15 @@ Para criar esse tipo de rota criamos uma pasta com o parâmetro (nesse caso o id
 pastas: _app > post > [id]_
 
 url: _www.meuDominio.com/posts/123_
+
+### Tela de loading
+
+Algumas telas demoram mais a carregar por ter que fazer requisições assíncronas, para não comprometer o UX, no Next podemos criar um arquivo chamado **loading.tsx** que será exibido no momento de carregamento da página principal.
+
+Caso não seja a tela toda e sim somente um componente que será atualizada com a requisição, podemos envolver essa parte com um componente **Suspense** e passar um outro componente de loading na prop **fallback**.
+
+### Middleware
+
+São funções que o Next executa entre a mudança de uma rota para outra.
+
+Exemplo de middleware é uma função que valida se o usuário está autenticado ou não, se possui permissão para aquela rota.
