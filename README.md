@@ -4,7 +4,7 @@ Repositório criado para aprendizado sobre **Next**.
 
 ## Conceito
 
-Next é um framework baseado em React que nos fornece funcionalidades nativas que antes precisaríamos de uma biblioteca de terceiros, como:
+NextJS é um framework baseado em React que nos fornece funcionalidades nativas que antes precisaríamos de uma biblioteca de terceiros, como:
 
 - **Server Side Rendering** (SSR).
 - **Static Site Generation** (SSG).
@@ -55,9 +55,9 @@ export const metadata: Metadata = {
 
 ### Server Component
 
-É um componente que é renderizado dentro do servidor, aumentando a otimização do site uma vez que não é necessário enviar um arquivo enorme de JS para o cliente baixar.
+Um componente que é renderizado dentro do servidor, aumentando a otimização do site uma vez que não é necessário enviar um arquivo enorme de JS para o cliente baixar.
 
-A página já vem pronta do servidor e padrão todo componente em Next é um Server Component.
+A página já vem pronta do servidor e por padrão todo componente em Next é um Server Component.
 
 Outra característica desse tipo de componente é que nele é possível fazer requisições / acessar banco de dados diretamente dentro do component pois como está no lado do servidor a aplicação tem acesso.
 
@@ -75,7 +75,7 @@ Eu posso utilizar um Client dentro de um Server porem não posso adicionar diret
 
 ## Action Server
 
-Adicionando "**use server** dentro de uma função eu posso fazer com que a mesma seja executada dentro do servidor.
+Adicionando "**use server**" dentro de uma função eu posso fazer com que a mesma seja executada dentro do servidor.
 
 Um exemplo de uso é fazer uma função para adicionar ao _action_ de um form, eu posso validar os dados do formulário e fazer uma nova requisição.
 
